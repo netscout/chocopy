@@ -1,0 +1,20 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>{{ author.first_name }}, {{ author.last_name }}</h1>
+
+  <p><strong>({{author.date_of_birth}}~{{author.date_of_death}})</strong></p>
+
+  <div style="margin-left:20px;margin-top:20px">
+    <h4>Books</h4>
+
+    {% for book in author.book_set.all %}
+      <hr>
+      <p>{{book.title}}</p>
+      <p>{{book.summary}}</p>
+    {% endfor %}
+  </div>
+
+  <a href="{% url 'author_update' author.id %}">저자 수정</a>
+  <a href="{% url 'author_delete' author.id %}">저자 삭제</a>
+{% endblock %}

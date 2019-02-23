@@ -1,0 +1,11 @@
+C:\Sources\python\SomeProject\bin\Debug\netcoreapp2.2\SomeProject.deps.json
+C:\Sources\python\SomeProject\bin\Debug\netcoreapp2.2\SomeProject.runtimeconfig.json
+C:\Sources\python\SomeProject\bin\Debug\netcoreapp2.2\SomeProject.runtimeconfig.dev.json
+C:\Sources\python\SomeProject\bin\Debug\netcoreapp2.2\SomeProject.dll
+C:\Sources\python\SomeProject\bin\Debug\netcoreapp2.2\SomeProject.pdb
+C:\Sources\python\SomeProject\obj\Debug\netcoreapp2.2\SomeProject.csprojAssemblyReference.cache
+C:\Sources\python\SomeProject\obj\Debug\netcoreapp2.2\SomeProject.csproj.CoreCompileInputs.cache
+C:\Sources\python\SomeProject\obj\Debug\netcoreapp2.2\SomeProject.AssemblyInfoInputs.cache
+C:\Sources\python\SomeProject\obj\Debug\netcoreapp2.2\SomeProject.AssemblyInfo.cs
+C:\Sources\python\SomeProject\obj\Debug\netcoreapp2.2\SomeProject.dll
+C:\Sources\python\SomeProject\obj\Debug\netcoreapp2.2\SomeProject.pdb

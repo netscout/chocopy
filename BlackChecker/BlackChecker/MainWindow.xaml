@@ -1,0 +1,70 @@
+﻿<Window x:Class="BlackChecker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BlackChecker"
+        mc:Ignorable="d"
+        xmlns:xctk="clr-namespace:Xceed.Wpf.Toolkit;assembly=Xceed.Wpf.Toolkit"
+        Title="검은사막 전담 마커 v0.000000001" Height="390" Width="800"
+        Loaded="Window_Loaded"
+        Closed="Window_Closed">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="43*"></ColumnDefinition>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="44*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Grid.ColumnSpan="2">
+            <Label VerticalAlignment="Center">검은사막 상태:</Label>
+            <TextBlock x:Name="tbStatus" VerticalAlignment="Center"></TextBlock>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Grid.ColumnSpan="2">
+            <Label VerticalAlignment="Center">현재 시간:</Label>
+            <TextBlock Text="{Binding Now, StringFormat='{}{0:HH:mm:ss}', Mode=OneWay}" VerticalAlignment="Center"></TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="2" Orientation="Horizontal">
+            <Label>종료 목표시간:</Label>
+            <RadioButton x:Name="rbToday" VerticalAlignment="Center" Checked="RbToday_Checked">오늘</RadioButton>
+            <RadioButton x:Name="rbTommorow" VerticalAlignment="Center" Checked="RbTommorow_Checked" IsChecked="True">내일</RadioButton>
+            <xctk:IntegerUpDown x:Name="toHour" Value="{Binding FromHours, Mode=TwoWay}" Increment="1" Minimum="0" Maximum="23"/>
+            <Label>시</Label>
+            <xctk:IntegerUpDown x:Name="toMinute" Value="{Binding FromMinutes, Mode=TwoWay}" Increment="1" Minimum="0" Maximum="59"/>
+            <Label>분</Label>
+            <Button x:Name="btnReserve" IsEnabled="{Binding Reservable, Mode=OneWay}" Click="BtnReserve_Click">예약</Button>
+            <Button x:Name="btnCancel" IsEnabled="{Binding Cancelable, Mode=OneWay}" Click="BtnCancel_Click">취소</Button>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" Grid.ColumnSpan="2">
+            <Label VerticalAlignment="Center">남은 시간:</Label>
+            <TextBlock Text="{Binding RemainTimeText, Mode=OneWay}" VerticalAlignment="Center"></TextBlock>
+        </StackPanel>
+
+        <CheckBox x:Name="cbMonitorBlack" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" Checked="CbMonitorBlack_Checked" Unchecked="CbMonitorBlack_Unchecked" Margin="0,8">검은사막 비정상 종료시 컴퓨터 전원 끄기</CheckBox>
+
+        <TextBlock Grid.Row="3" Grid.ColumnSpan="3">
+            종료 시간을 예약시 해당 시간이 되면 컴퓨터가 자동 종료 되도록 예약을 하게 됩니다.<LineBreak></LineBreak><LineBreak></LineBreak>
+            '검은 사막 비정상 종료시 컴퓨터 전원 끄기'옵션을 활성화 하면<LineBreak></LineBreak>
+            예약 시간이 되기 전에 검은 사막이 비정상 종료 될 경우 60초 후에 컴퓨터를 자동 종료하도록 합니다.<LineBreak></LineBreak>
+            이 기능은 종료 목표 시간이 예약된 경우에만 작동합니다.<LineBreak></LineBreak><LineBreak></LineBreak>
+            
+            검은사막 비정상 종료나 검은사막 전담 마커의 오류로 인한 비정상 종료시 logs폴더에 기록을 남기도록 했습니다.<LineBreak></LineBreak>
+            
+            예시 : 2020-2-20-15-41-28-672 비정상종료함.txt<LineBreak></LineBreak><LineBreak></LineBreak>
+            프로그램 실행을 위해 .NET Framework 4.6 설치가 필요합니다.
+            <LineBreak></LineBreak><LineBreak></LineBreak>
+            소스 코드 : https://github.com/netscout/chocopy/BlackChecker
+            <LineBreak></LineBreak>
+            Licensed under MIT License.
+            <LineBreak></LineBreak>
+            Using Xceed Extended WPF Toolkit under Xceed Community License.(https://github.com/xceedsoftware/wpftoolkit)
+        </TextBlock>
+    </Grid>
+</Window>

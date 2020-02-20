@@ -1,0 +1,17 @@
+C:\Users\mentoreet\Documents\GitHub\chocopy\BlackChecker\BlackChecker\bin\Release\BlackChecker.exe.config
+C:\Users\mentoreet\Documents\GitHub\chocopy\BlackChecker\BlackChecker\bin\Release\BlackChecker.exe
+C:\Users\mentoreet\Documents\GitHub\chocopy\BlackChecker\BlackChecker\bin\Release\BlackChecker.pdb
+C:\Users\mentoreet\Documents\GitHub\chocopy\BlackChecker\BlackChecker\bin\Release\Xceed.Wpf.Toolkit.dll
+C:\Users\mentoreet\Documents\GitHub\chocopy\BlackChecker\BlackChecker\obj\Release\BlackChecker.csprojAssemblyReference.cache
+C:\Users\mentoreet\Documents\GitHub\chocopy\BlackChecker\BlackChecker\obj\Release\MainWindow.g.cs
+C:\Users\mentoreet\Documents\GitHub\chocopy\BlackChecker\BlackChecker\obj\Release\App.g.cs
+C:\Users\mentoreet\Documents\GitHub\chocopy\BlackChecker\BlackChecker\obj\Release\BlackChecker_MarkupCompile.cache
+C:\Users\mentoreet\Documents\GitHub\chocopy\BlackChecker\BlackChecker\obj\Release\BlackChecker_MarkupCompile.lref
+C:\Users\mentoreet\Documents\GitHub\chocopy\BlackChecker\BlackChecker\obj\Release\MainWindow.baml
+C:\Users\mentoreet\Documents\GitHub\chocopy\BlackChecker\BlackChecker\obj\Release\BlackChecker.g.resources
+C:\Users\mentoreet\Documents\GitHub\chocopy\BlackChecker\BlackChecker\obj\Release\BlackChecker.Properties.Resources.resources
+C:\Users\mentoreet\Documents\GitHub\chocopy\BlackChecker\BlackChecker\obj\Release\BlackChecker.csproj.GenerateResource.cache
+C:\Users\mentoreet\Documents\GitHub\chocopy\BlackChecker\BlackChecker\obj\Release\BlackChecker.csproj.CoreCompileInputs.cache
+C:\Users\mentoreet\Documents\GitHub\chocopy\BlackChecker\BlackChecker\obj\Release\BlackChecker.csproj.CopyComplete
+C:\Users\mentoreet\Documents\GitHub\chocopy\BlackChecker\BlackChecker\obj\Release\BlackChecker.exe
+C:\Users\mentoreet\Documents\GitHub\chocopy\BlackChecker\BlackChecker\obj\Release\BlackChecker.pdb

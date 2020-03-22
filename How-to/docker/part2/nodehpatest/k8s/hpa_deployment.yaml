@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodehpatest
+  labels:
+    app: nodehpatest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nodehpatest
+  template:
+    metadata:
+      labels:
+        app: nodehpatest
+    spec:
+      containers:
+        - name: nodehpatest
+          image: netscout82/nodehpatest:0.1
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 3000
+          resources:
+            requests:
+              cpu: 100m

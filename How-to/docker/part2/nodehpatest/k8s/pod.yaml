@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+  labels:
+    app: web
+spec:
+  containers:
+    - name: nodehpatest
+      image: netscout82/nodehpatest:0.1
+      ports:
+        - containerPort: 3000
